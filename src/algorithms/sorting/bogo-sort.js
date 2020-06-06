@@ -1,5 +1,5 @@
 import Chance from "chance";
-import { swap } from "../helpers/index";
+import { arrays: { swap } } from "../helpers/index";
 
 function in_order(array) {
   for (let i = 1; i < array.length; i++) {

@@ -1,5 +1,7 @@
-import { swap } from './swap';
+import * as array_helpers from './arrays/index';
+import * as functional_helpers from './functional/index';
 
 export {
-  swap
+  arrays: array_helpers
+  functional: functional_helpers
 }

@@ -1,4 +1,4 @@
-import { swap } from "../helpers/index";
+import { arrays: { swap } } from "../helpers/index";
 
 export function selection_sort(array) {
   const output = [...array];

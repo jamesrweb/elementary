@@ -1,0 +1,40 @@
+{
+  "name": "@jamesrweb/elementary",
+  "version": "0.1.0",
+  "description": "A collection of common data structures and algorithms for everyday programming",
+  "main": "./dist/bundle.common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm run build && npm publish --access=public && rm -rf ./dist",
+    "build": "npx rollup -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesrweb/elementary.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "algorithms"
+  ],
+  "author": "James Robb <james@jamesrobb.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesrweb/elementary/issues"
+  },
+  "homepage": "https://github.com/jamesrweb/elementary#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "rollup-plugin-terser": "^6.1.0"
+  },
+  "dependencies": {
+    "chance": "^1.1.6"
+  }
+}

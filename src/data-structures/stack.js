@@ -1,52 +1,44 @@
 export class Stack {
   constructor() {
     this.items = [];
-    this.count = 0;
+  }
+
+  print() {
+    console.log(this.items);
   }
 
   push(item) {
-    this.items[this.count] = item;
-    this.count = this.count + 1;
-    return this.count - 1;
+    this.items.push(item);
+    return this.items.length - 1;
   }
 
   pop() {
-    if (this.count === 0) {
-      return undefined;
-    }
-
-    this.count = this.count - 1;
-    const deletedItem = this.items[this.count];
-    this.items = this.items.slice(0, this.count);
-    return deletedItem;
+    return this.items.pop();
   }
 
   find(value) {
     for (let index = 0; index < this.size(); index++) {
       const item = this.items[index];
-      if (Object.is(item, value)) {
-        return index;
-      }
+      if (Object.is(item, value)) return index;
     }
 
-    return undefined;
-  }
-
-  peek() {
-    return this.items[this.count - 1];
-  }
-
-  empty() {
-    return this.count === 0;
-  }
-
-  size() {
-    return this.count;
+    return -1;
   }
 
   clear() {
-    this.items = [];
-    this.count = 0;
+    this.items.length = 0;
     return this.items;
+  }
+
+  peek() {
+    return this.items[this.items.length - 1];
+  }
+
+  size() {
+    return this.items.length;
+  }
+
+  empty() {
+    return this.size() === 0;
   }
 }

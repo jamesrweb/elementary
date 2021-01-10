@@ -1,5 +1,5 @@
-export * as sorting from "./sorting/index";
-export * as search from "./search/index";
-export * as number from "./numbers/index";
-export * as helper from "./helpers/index";
-export * as other from "./other/index";
+export * as sorting from "./sorting";
+export * as search from "./search";
+export * as number from "./numbers";
+export * as helper from "./helpers";
+export * as other from "./other";

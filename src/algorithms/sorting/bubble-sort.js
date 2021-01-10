@@ -1,4 +1,4 @@
-import { arrays } from "../helpers/index";
+import { arrays } from "../helpers";
 
 export function bubble_sort(array) {
   const output = [...array];

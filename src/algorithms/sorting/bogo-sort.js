@@ -1,5 +1,5 @@
 import Chance from "chance";
-import { arrays } from "../helpers/index";
+import { arrays } from "../helpers";
 
 function in_order(array) {
   for (let i = 1; i < array.length; i++) {

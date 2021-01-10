@@ -1,2 +1,2 @@
-export * as arrays from "./arrays/index";
-export * as functional from "./functional/index";
+export * as arrays from "./arrays";
+export * as functional from "./functional";

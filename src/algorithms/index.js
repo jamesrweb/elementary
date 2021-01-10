@@ -1,11 +1,5 @@
-import * as sorting_algorithms from './sorting/index';
-import * as search_algorithms from './search/index';
-import * as number_algorithms from './numbers/index';
-import * as helper_algorithms from './helpers/index';
-
-export default {
-  sorting: sorting_algorithms,
-  search: search_algorithms,
-  numbers: number_algorithms,
-  helpers: helper_algorithms
-}
+export * as sorting from "./sorting/index";
+export * as search from "./search/index";
+export * as number from "./numbers/index";
+export * as helper from "./helpers/index";
+export * as other from "./other/index";

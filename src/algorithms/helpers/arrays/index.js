@@ -1,11 +1,4 @@
-import { swap } from './swap';
-import { map } from './map';
-import { filter } from './filter';
-import { reduce } from './reduce';
-
-export {
-  swap,
-  map,
-  filter,
-  reduce
-}
+export { swap } from "./swap";
+export { map } from "./map";
+export { filter } from "./filter";
+export { reduce } from "./reduce";

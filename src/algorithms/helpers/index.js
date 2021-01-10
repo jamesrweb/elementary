@@ -1,7 +1,2 @@
-import * as array_helpers from './arrays/index';
-import * as functional_helpers from './functional/index';
-
-export {
-  arrays: array_helpers,
-  functional: functional_helpers
-}
+export * as arrays from "./arrays/index";
+export * as functional from "./functional/index";

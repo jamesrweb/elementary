@@ -1,5 +1,5 @@
 import Chance from "chance";
-import { arrays: { swap } } from "../helpers/index";
+import { arrays } from "../helpers/index";
 
 function in_order(array) {
   for (let i = 1; i < array.length; i++) {
@@ -22,7 +22,7 @@ function fisher_yates_shuffle(array) {
     });
 
     if (typeof output[randomIndex] !== "undefined") {
-      swap(output, index, randomIndex);
+      arrays.swap(output, index, randomIndex);
     }
   }
 

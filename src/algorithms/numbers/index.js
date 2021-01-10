@@ -1,5 +1,1 @@
-import { is_prime } from "./is-prime";
-
-export {
-  is_prime
-}
+export { is_prime } from "./is-prime";

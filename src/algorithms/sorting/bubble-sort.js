@@ -1,4 +1,4 @@
-import { arrays: { swap } } from "../helpers/index";
+import { arrays } from "../helpers/index";
 
 export function bubble_sort(array) {
   const output = [...array];
@@ -8,7 +8,7 @@ export function bubble_sort(array) {
     for (let inner = 0; inner < length; inner++) {
       const next = inner + 1;
       if (output[inner] > output[next]) {
-        swap(output, inner, next);
+        arrays.swap(output, inner, next);
       }
     }
   }

@@ -1,4 +1,4 @@
-import { arrays: { swap } } from "../helpers/index";
+import { arrays } from "../helpers/index";
 
 export function selection_sort(array) {
   const output = [...array];
@@ -12,7 +12,7 @@ export function selection_sort(array) {
     }
 
     if (output[outer] > output[low]) {
-      swap(output, outer, low);
+      array.swap(output, outer, low);
     }
   }
 

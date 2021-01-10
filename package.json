@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A collection of common data structures and algorithms for everyday programming",
   "main": "./dist/bundle.common.js",
+  "module": "./dist/bindle.esm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npm run build && npm publish --access=public && rm -rf ./dist",
